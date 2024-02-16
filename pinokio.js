@@ -12,7 +12,10 @@ module.exports = {
           { icon: "fa-solid fa-terminal", text: "Terminal", href: "run.json" }
         ]
       } else {
-        return [{ icon: "fa-solid fa-power-off", text: "Run", href: "run.json", params: { fullscreen: true, run: true } }]
+        return [
+          { icon: "fa-solid fa-power-off", text: "Run", href: "run.json", params: { fullscreen: true, run: true } },
+          { icon: "fa-solid fa-check", text: "Run", href: "fix.json", params: { fullscreen: true, run: true } }
+        ]
       }
     } else {
       return [{ icon: "fa-solid fa-plug", text: "Install", href: "install.json", params: { run: true, fullscreen: true } }]
