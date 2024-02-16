@@ -44,7 +44,7 @@
       {
       "type":  "text",
       "key": "scenearios",
-      "title": "Scenarios",
+      "title": "scenarios",
       "description": "This is the number of different prompts that will be generated",
       "placeholder": "1",
       "default": "1"   
