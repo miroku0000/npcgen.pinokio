@@ -48,7 +48,31 @@
       "description": "This is the number of different prompts that will be generated",
       "placeholder": "1",
       "default": "1"   
+    }{
+      "type":  "int",
+      "key": "width",
+      "title": "width",
+      "description": "This is the width of the generated image in pixels",
+      "placeholder": "512",
+      "default": "512"   
+    },
+      {
+      "type":  "int",
+      "key": "height",
+      "title": "height",
+      "description": "This is the width of the generated image in pixels",
+      "placeholder": "512",
+      "default": "512"   
+    },
+      {
+      "type":  "int",
+      "key": "steps",
+      "title": "steps",
+      "description": "This is the number of steps for the LCM algorithm. More is better but slower (4-8) is reccomended by LCM",
+      "placeholder": "16",
+      "default": "16"   
     }
+      
     ]
   }
 },
