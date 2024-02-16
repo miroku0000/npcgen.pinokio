@@ -26,7 +26,7 @@
       "default": "random"
     }, 
     {
-      "type":  "text",
+      "type":  "int",
       "key": "npcclass",
       "title": "NPC Class",
       "description": "druid, bard, wizard, barbarian, rogue, sorcerer, warlock, cleric, fighter, shopkeep, bartender, whore, innkeeper, random",
