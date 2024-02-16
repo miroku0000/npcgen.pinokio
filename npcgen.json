@@ -26,7 +26,7 @@
       "default": "random"
     }, 
     {
-      "type":  "int",
+      "type":  "text",
       "key": "npcclass",
       "title": "NPC Class",
       "description": "druid, bard, wizard, barbarian, rogue, sorcerer, warlock, cleric, fighter, shopkeep, bartender, whore, innkeeper, random",
@@ -42,8 +42,8 @@
       "default": "4"   
     }, 
       {
-      "type":  "text",
-      "key": "scenearios",
+      "type":  "int",
+      "key": "scenarios",
       "title": "scenarios",
       "description": "This is the number of different prompts that will be generated",
       "placeholder": "1",
