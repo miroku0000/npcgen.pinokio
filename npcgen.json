@@ -7,8 +7,8 @@
  {
   "method": "input",
   "params": {
-    "title": NPC Parameters,
-    "description": Parameters for NPC Generation,
+    "title": "NPC Parameters",
+    "description": "Parameters for NPC Generation",
     "type": "notify",
     "form": [{
       "type": "text",
