@@ -14,12 +14,14 @@ module.exports = {
       } else {
         return [
           { icon: "fa-solid fa-power-off", text: "Run LCM", href: "run.json", params: { fullscreen: true, run: true } },
-          { icon: "fa-solid fa-glasses", text: "uncensor", href: "fix.json", params: { fullscreen: true, run: true } },
           { icon: "fa-solid fa-people-group", text: "generatenpc", href: "npcgen.json", params: { fullscreen: true, run: true } }
         ]
       }
     } else {
-      return [{ icon: "fa-solid fa-plug", text: "Install", href: "install.json", params: { run: true, fullscreen: true } }]
+      return [
+        { icon: "fa-solid fa-glasses", text: "Install uncensored", href: "install.json", params: { run: true, fullscreen: true } },
+        { icon: "fa-solid fa-plug", text: "Install censored", href: "installcensored.json", params: { run: true, fullscreen: true } },
+             ]
     }
   }
 }
