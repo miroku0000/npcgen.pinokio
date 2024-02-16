@@ -19,7 +19,6 @@
       "venv": "venv",
       "path": "app",
       "message": [
-        "uncensoring",
         "fix.py"
       ]
     }
