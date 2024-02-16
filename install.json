@@ -12,7 +12,19 @@
         "pip install -r requirements.txt"
       ]
     }
-  }, {
+  },
+    {
+    "method": "shell.run",
+    "params": {
+      "venv": "venv",
+      "path": "app",
+      "message": [
+        "uncensoring",
+        "fix.py"
+      ]
+    }
+  },
+    {
     "method": "input",
     "params": { "title": "Install Success", "description": "Go back to the dashboard and launch the app!" }
   }, {
