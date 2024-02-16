@@ -1,7 +1,7 @@
 {
   "run": [{
     "method": "shell.run",
-    "params": { "message": "git clone https://github.com/cocktailpeanut/latent-consistency-model.git app" }
+    "params": { "message": "git clone https://github.com/miroku0000/npc-generator.git app" }
   }, {
     "method": "shell.run",
     "params": {
