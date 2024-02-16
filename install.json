@@ -1,4 +1,4 @@
-{
+ {
   "run": [{
     "method": "shell.run",
     "params": { "message": "git clone https://github.com/miroku0000/npc-generator.git app" }
@@ -26,7 +26,7 @@
   },
     {
     "method": "input",
-    "params": { "title": "Install Success", "description": "Go back to the dashboard and launch the app!" }
+    "params": { "title": "NPC Gen is now installed and uncensored", "description": "Go back to the dashboard and launch the app!" }
   }, {
     "method": "browser.open",
     "params": { "uri": "/?selected=npcgen" }
