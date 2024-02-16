@@ -3,24 +3,62 @@
   "height": 512,
   "prompt": "",
   "steps": 16,
-  "run": [{
-    "method": "input",
-    "params": {
-      "title": "Enter prompt",
-      "type": "notify",
-      "form": [{
-        "type": "text",
-        "key": "prompt",
-        "placeholder": "Enter parameters for generatenpc.py (for example --npcrace human --npcgender female --npcclass cleric --imagesperscenario 1 --scenarios 1"
-      }]
+  "run": [
+ {
+  "method": "input",
+  "params": {
+    "title": NPC Parameters,
+    "description": Parameters for NPC Generation,
+    "type": "notify",
+    "form": [{
+      "type": "text",
+      "key": "npcgender",
+      "title": "gender",
+      "description": "male, female, or random",
+      "placeholder": "gender",
+      "default": "random"
+    }, {
+      "type":  "text",
+      "key": "npcrace",
+      "title": "NPC Race",
+      "description": "human, elf, dwarf, halfing, gnome, orc, or random",
+      "placeholder": "race",
+      "default": "random"
+    }, 
+    {
+      "type":  "text",
+      "key": "npcclass",
+      "title": "NPC Class",
+      "description": "druid, bard, wizard, barbarian, rogue, sorcerer, warlock, cleric, fighter, shopkeep, bartender, whore, innkeeper, random",
+      "placeholder": "class",
+      "default": "random"
+    }, 
+      {
+      "type":  "text",
+      "key": "imagesperscenario",
+      "title": "Images per scenario",
+      "description": "For each random scenario (one prompt to the text to image generator) how many images do you want to generate",
+      "placeholder": "4",
+      "default": "4"   
+    }, 
+      {
+      "type":  "text",
+      "key": "scenearios",
+      "title": "Scenarios",
+      "description": "This is the number of different prompts that will be generated",
+      "placeholder": "1",
+      "default": "1"   
     }
-  }, {
+    ]
+  }
+},
+    {
     "method": "shell.run",
     "params": {
       "env": { "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.0" },
       "venv": "venv",
       "path": "app",
-      "message": "python generatenpc.py {{input.prompt}}"
+      "message": "python generatenpc.py --npcgender {{input.npcgender}} --npcrace {{input.npcrace}} --npcclass {{input.npcclass}} --imagesperscenario {{input.imagesperscenario}} --scenarios {{input.scenarios}}"
     }
   }]
 }
