@@ -1,7 +1,7 @@
 module.exports = {
   title: "npcgen",
   icon: "icon.png",
-  description: "Fast Image generator using Latent consistency models https://replicate.com/blog/run-latent-consistency-model-on-mac",
+  description: "Fast Image generator for D&D NPCS using Latent consistency models https://replicate.com/blog/run-latent-consistency-model-on-mac",
   menu: async (kernel) => {
     let installed = await kernel.exists(__dirname, "app", "venv")
     if (installed) {
