@@ -1,5 +1,5 @@
 module.exports = {
-  title: "LCM",
+  title: "npcgen",
   icon: "icon.png",
   description: "Fast Image generator using Latent consistency models https://replicate.com/blog/run-latent-consistency-model-on-mac",
   menu: async (kernel) => {
