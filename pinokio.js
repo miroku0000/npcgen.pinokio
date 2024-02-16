@@ -14,7 +14,7 @@ module.exports = {
       } else {
         return [
           { icon: "fa-solid fa-power-off", text: "Run", href: "run.json", params: { fullscreen: true, run: true } },
-          { icon: "fa-solid fa-check", text: "Run", href: "fix.json", params: { fullscreen: true, run: true } }
+          { icon: "fa-solid wand-magic-sparkles", text: "Run", href: "fix.json", params: { fullscreen: true, run: true } }
         ]
       }
     } else {
