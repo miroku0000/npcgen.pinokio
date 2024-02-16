@@ -13,9 +13,9 @@ module.exports = {
         ]
       } else {
         return [
-          { icon: "fa-solid fa-power-off", text: "Run", href: "run.json", params: { fullscreen: true, run: true } },
-          { icon: "fa-solid fa-check", text: "Run", href: "fix.json", params: { fullscreen: true, run: true } },
-          { icon: "fa-solid fa-people-group", text: "Run", href: "npcgen.json", params: { fullscreen: true, run: true } }
+          { icon: "fa-solid fa-power-off", text: "Run LCM", href: "run.json", params: { fullscreen: true, run: true } },
+          { icon: "fa-solid fa-check", text: "uncensor", href: "fix.json", params: { fullscreen: true, run: true } },
+          { icon: "fa-solid fa-people-group", text: "generatenpc", href: "npcgen.json", params: { fullscreen: true, run: true } }
         ]
       }
     } else {
