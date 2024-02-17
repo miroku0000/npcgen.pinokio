@@ -26,7 +26,7 @@
       "env": { "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.0" },
       "venv": "venv",
       "path": "app",
-      "message": "python main.py \"{{input.prompt}}\" {{str(input.steps)}} --width {{self.width}} --height {{self.height}} --continuous"
+      "message": "python main.py \"{{input.prompt}}\" {{str(input.steps)}} --width {{self.width}} --height {{self.height}}"
     }
   }]
 }
