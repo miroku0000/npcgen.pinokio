@@ -7,21 +7,17 @@
  {
   "method": "input",
   "params": {
-    "title": "NPC Parameters",
-    "description": "Parameters for NPC Generation",
     "type": "notify",
     "form": [{
       "type": "text",
       "key": "npcgender",
-      "title": "gender",
-      "description": "male, female, or random",
+      "title": "NPC gender",
       "placeholder": "gender",
       "default": "random"
     }, {
       "type":  "text",
       "key": "npcrace",
       "title": "NPC Race",
-      "description": "human, elf, dwarf, halfing, gnome, orc, or random",
       "placeholder": "race",
       "default": "random"
     }, 
@@ -29,7 +25,6 @@
       "type":  "text",
       "key": "npcclass",
       "title": "NPC Class",
-      "description": "druid, bard, wizard, barbarian, rogue, sorcerer, warlock, cleric, fighter, shopkeep, bartender, whore, innkeeper, random",
       "placeholder": "class",
       "default": "random"
     }, 
@@ -37,7 +32,6 @@
       "type":  "text",
       "key": "imagesperscenario",
       "title": "Images per scenario",
-      "description": "For each random scenario (one prompt to the text to image generator) how many images do you want to generate",
       "placeholder": "4",
       "default": "4"   
     }, 
@@ -45,38 +39,34 @@
       "type":  "int",
       "key": "scenarios",
       "title": "scenarios",
-      "description": "This is the number of different prompts that will be generated",
       "placeholder": "1",
-      "default": "1"   
-    }{
-      "type":  "int",
-      "key": "width",
-      "title": "width",
-      "description": "This is the width of the generated image in pixels",
-      "placeholder": "512",
-      "default": "512"   
-    },
-      {
-      "type":  "int",
-      "key": "height",
-      "title": "height",
-      "description": "This is the width of the generated image in pixels",
-      "placeholder": "512",
-      "default": "512"   
-    },
+      "default": "1"  
+      },
       {
       "type":  "int",
       "key": "steps",
       "title": "steps",
-      "description": "This is the number of steps for the LCM algorithm. More is better but slower (4-8) is reccomended by LCM",
       "placeholder": "16",
       "default": "16"   
+    },
+    {
+      "type":  "int",
+      "key": "width",
+      "title": "width",
+      "default": "512"   
+
+    },
+    {
+      "type":  "int",
+      "key": "height",
+      "title": "height",
+      "default": "512"   
     }
-      
+
     ]
   }
 },
-    {
+{
     "method": "shell.run",
     "params": {
       "env": { "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.0" },
