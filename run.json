@@ -16,7 +16,23 @@
         {
         "type": "int",
         "key": "steps",
+        "title": "steps",
+        "default": 16,
         "placeholder": "Enter the number of steps (ex: 16)"
+      },
+      {
+        "type": "int",
+        "key": "width",
+        "title": "Width",
+        "placeholder": "Enter the width in pixels",
+        "default": 512
+      },
+      {
+        "type": "int",
+        "key": "height",
+        "title": "Height",
+        "placeholder": "Enter the height in pixels",
+        "default": 512
       }
       ]
     }
@@ -26,7 +42,7 @@
       "env": { "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.0" },
       "venv": "venv",
       "path": "app",
-      "message": "python main.py \"{{input.prompt}}\" --steps {{input.steps}} --width {{self.width}} --height {{self.height}}"
+      "message": "python main.py \"{{input.prompt}}\" --steps {{input.steps}} --width {{input.width}} --height {{input.height}}"
     }
   }]
 }
