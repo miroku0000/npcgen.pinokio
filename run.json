@@ -12,7 +12,13 @@
         "type": "text",
         "key": "prompt",
         "placeholder": "Enter a prompt (ex: a beautiful apple floating in outer space)"
-      }]
+      },
+        {
+        "type": int,
+        "key": "steps",
+        "placeholder": "Enter the number of steps (ex: 16)"
+      }
+      ]
     }
   }, {
     "method": "shell.run",
@@ -20,7 +26,7 @@
       "env": { "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.0" },
       "venv": "venv",
       "path": "app",
-      "message": "python main.py \"{{input.prompt}}\" --steps {{self.steps}} --width {{self.width}} --height {{self.height}} --continuous"
+      "message": "python main.py \"{{input.prompt}}\" --steps {{str(input.steps)}} --width {{self.width}} --height {{self.height}} --continuous"
     }
   }]
 }
