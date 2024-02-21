@@ -1,0 +1,15 @@
+ {
+    "method": "shell.run",
+    "params": {
+      "venv": "venv",
+      "path": "app",
+      "message": [
+        "generatehtml.py"
+      ]
+    }
+  },  
+  {
+    "method": "browser.open",
+    "params": { "uri": "./app/output/index.html" }
+  }]
+}
