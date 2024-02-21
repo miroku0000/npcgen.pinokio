@@ -11,5 +11,5 @@
   {
     "method": "browser.open",
     "params": { "uri": "./app/output/index.html" }
-  }]
-}
+  }
+
