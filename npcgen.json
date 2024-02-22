@@ -72,7 +72,7 @@
       "env": { "PYTORCH_MPS_HIGH_WATERMARK_RATIO": "0.0" },
       "venv": "venv",
       "path": "app",
-      "message": "python generatenpc.py --npcgender {{input.npcgender}} --npcrace {{input.npcrace}} --npcclass {{input.npcclass}} --imagesperscenario {{input.imagesperscenario}} --scenarios {{input.scenarios}} --steps {{input.steps}} --width {{input.width}} --height {{input.height}}"
+      "message": "python generatenpc.py --npcgender {{input.npcgender}} --npcrace {{input.npcrace}} --npcclass \"{{input.npcclass}}\" --imagesperscenario {{input.imagesperscenario}} --scenarios {{input.scenarios}} --steps {{input.steps}} --width {{input.width}} --height {{input.height}}"
     }
   }]
 }
