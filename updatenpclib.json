@@ -1,9 +1,17 @@
 {
-  "run": [ {
+  "run": [
+{
+    "method": "shell.run",
+    "params": {
+      "path": "app/npclibrary",
+      "message": "git pull"
+    }
+  },
+{
     "method": "shell.run",
     "params": {
       "venv": "venv",
-      "path": "app",
+      "path": "app/npclibrary",
       "message": ["python generatehtml.py" ]
     }
   },
@@ -11,10 +19,12 @@
     "method": "shell.run",
     "params": {
       "venv": "venv",
-      "path": "app/output",
+      "path": "app/npclibrary/npcs",
       "message": ["index.html" ]
     }
   }
  
     ]
 }
+
+

@@ -1,8 +1,8 @@
 {
-  "width": 512,
-  "height": 512,
+  "width": 1024,
+  "height": 1024,
   "prompt": "",
-  "steps": 16,
+  "steps": 32,
   "run": [
  {
   "method": "input",
@@ -19,48 +19,48 @@
       "key": "npcrace",
       "title": "NPC Race",
       "placeholder": "race",
-      "default": "random"
+      "default": "human"
     }, 
     {
       "type":  "text",
       "key": "npcclass",
       "title": "NPC Class",
       "placeholder": "class",
-      "default": "random"
+      "default": "bartender"
     }, 
       {
       "type":  "text",
       "key": "imagesperscenario",
       "title": "Images per scenario",
       "placeholder": "4",
-      "default": "4"   
+      "default": "1"   
     }, 
       {
       "type":  "int",
       "key": "scenarios",
       "title": "scenarios",
       "placeholder": "1",
-      "default": "1"  
+      "default": "1000"  
       },
       {
       "type":  "int",
       "key": "steps",
       "title": "steps",
       "placeholder": "16",
-      "default": "16"   
+      "default": "32"   
     },
     {
       "type":  "int",
       "key": "width",
       "title": "width",
-      "default": "512"   
+      "default": "1024"   
 
     },
     {
       "type":  "int",
       "key": "height",
       "title": "height",
-      "default": "512"   
+      "default": "1024"   
     }
 
     ]

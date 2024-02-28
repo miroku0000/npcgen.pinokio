@@ -1,0 +1,13 @@
+ {
+  "run": [{
+    "method": "shell.run",
+    "params": { "message": "git clone https://github.com/miroku0000/npclibrary.git app/npclibrary" }
+  }, 
+    {
+    "method": "input",
+    "params": { "title": "NPC Library is now installed under app/npclibrary", "description": "Go back to the dashboard and launch the app!" }
+  }, {
+    "method": "browser.open",
+    "params": { "uri": "/?selected=npcgen" }
+  }]
+}
