@@ -12,12 +12,24 @@ module.exports = {
           { icon: "fa-solid fa-terminal", text: "Terminal", href: "run.json" }
         ]
       } else {
+        let npclibinstalled=await kernel.exists(__dirname, "app", "npclib")
+        if (npclibinstalled)
+        {  
         return [
           { icon: "fa-solid fa-people-group", text: "Generate NPCs", href: "npcgen.json", params: { fullscreen: true, run: true } },
           { icon: "fa-solid fa-paperclip", text: "View NPCs", href: "generatehtml.json", params: { fullscreen: true, run: true } },
           { icon: "fa-solid fa-power-off", text: "Manual Text To Image", href: "run.json", params: { fullscreen: true, run: true } }, 
           { icon: "fa-brands fa-instalod", text: "Install NPC Library(Requires 1.6GB Disk Space)", href: "installnpclib.json", params: { fullscreen: true, run: true } }        
         ]
+      }
+      else
+        return [
+          { icon: "fa-solid fa-people-group", text: "Generate NPCs", href: "npcgen.json", params: { fullscreen: true, run: true } },
+          { icon: "fa-solid fa-paperclip", text: "View NPCs", href: "generatehtml.json", params: { fullscreen: true, run: true } },
+          { icon: "fa-solid fa-power-off", text: "Manual Text To Image", href: "run.json", params: { fullscreen: true, run: true } }, 
+          { icon: "fa-brands fa-instalod", text: "update NPC Library", href: "updatenpclib.json", params: { fullscreen: true, run: true } }        
+        ]
+
       }
     } else {
       return [
