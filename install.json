@@ -9,6 +9,21 @@
       "path": "app",
       "message": [
         "{{pip.install.torch}}",
+        "pip install -r moonbeam/requirements.txt"
+      ]
+    }
+  },
+  {
+    "method": "shell.run",
+    "params": { "message": "git clone https://github.com/miroku0000/moondream.git app/" }
+  },
+  {
+    "method": "shell.run",
+    "params": {
+      "venv": "venv",
+      "path": "app/moondream/",
+      "message": [
+        "{{pip.install.torch}}",
         "pip install -r requirements.txt"
       ]
     }
