@@ -1,7 +1,7 @@
 module.exports = {
   title: "npcgen",
   icon: "icon.png",
-  description: "Fast Image generator for D&D NPCS using Latent consistency models https://replicate.com/blog/run-latent-consistency-model-on-mac",
+  description: "Fast Image generator for D&D NPCS using Latent consistency models",
   menu: async (kernel) => {
     let installed = await kernel.exists(__dirname, "app", "venv")
     if (installed) {
@@ -13,7 +13,7 @@ module.exports = {
         ]
       } else {
         let npclibinstalled=await kernel.exists(__dirname, "app", "npclibrary")
-        if (npclibinstalled)
+        if (!npclibinstalled)
         {  
         return [
           { icon: "fa-solid fa-people-group", text: "Generate NPCs", href: "npcgen.json", params: { fullscreen: true, run: true } },
