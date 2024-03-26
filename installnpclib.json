@@ -3,7 +3,7 @@
     "method": "shell.run",
     "params": { 
 		"path": "app",
-      "message": "git pull https://github.com/miroku0000/npclibrary.git"}
+      "message": "git clone https://github.com/miroku0000/npclibrary.git"}
   }, 
     {
     "method": "input",
