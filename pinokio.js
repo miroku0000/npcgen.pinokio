@@ -12,7 +12,7 @@ module.exports = {
           { icon: "fa-solid fa-terminal", text: "Terminal", href: "run.json" }
         ]
       } else {
-        let npclibinstalled=await kernel.exists(__dirname, "app", "npclib")
+        let npclibinstalled=await kernel.exists(__dirname, "app", "npclibrary")
         if (npclibinstalled)
         {  
         return [
