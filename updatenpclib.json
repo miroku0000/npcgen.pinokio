@@ -3,8 +3,8 @@
 {
     "method": "shell.run",
     "params": {
-      "path": "app",
-      "message": "git pull https://github.com/miroku0000/npclibrary.git npclibrary"
+      "path": "app/npclibrary",
+      "message": "git pull"
     }
   },
 {
@@ -12,7 +12,7 @@
     "params": {
       "venv": "venv",
       "path": "app/npclibrary",
-      "message": ["python generatehtml.py" ]
+      "message": ["python generatenpchtml.py" ]
     }
   },
 {
