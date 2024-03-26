@@ -1,7 +1,9 @@
  {
   "run": [{
     "method": "shell.run",
-    "params": { "message": "git clone https://github.com/miroku0000/npclibrary.git app/npclibrary" }
+    "params": { 
+		"path": "app",
+      "message": "git pull https://github.com/miroku0000/npclibrary.git"}
   }, 
     {
     "method": "input",
