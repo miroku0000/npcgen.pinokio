@@ -20,7 +20,7 @@
   {
     "method": "shell.run",
     "params": {
-      "venv": "venv",
+      "venv": "moondream/venv",
       "path": "app/",
       "message": [
         "{{pip.install.torch}}",
