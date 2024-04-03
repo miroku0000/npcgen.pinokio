@@ -1,0 +1,15 @@
+{
+  "run": [
+    {
+    "method": "shell.run",
+    "params": {
+      "venv": "venv",
+      "path": "app",
+      "message": "python generatewhatsneeded.py"
+    }
+  }
+
+    ]
+}
+
+
