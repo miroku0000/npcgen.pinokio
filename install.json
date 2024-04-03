@@ -16,7 +16,17 @@
   {
     "method": "shell.run",
     "params": { "path":"app","message": "git clone https://github.com/miroku0000/moondream.git moondream" }
+  },{
+    "method": "shell.run",
+    "params": {
+      "venv": "moondream/venv",
+      "path": "app/moondream",
+      "message": [
+        "{{pip.install.torch}}",
+      ]
+    }
   },
+
   {
     "method": "shell.run",
     "params": {
