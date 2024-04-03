@@ -22,11 +22,10 @@
       "venv": "moondream/venv",
       "path": "app/moondream",
       "message": [
-        "{{pip.install.torch}}",
+        "{{pip.install.torch}}"
       ]
     }
   },
-
   {
     "method": "shell.run",
     "params": {
