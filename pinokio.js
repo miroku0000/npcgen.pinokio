@@ -28,7 +28,10 @@ module.exports = {
           { icon: "fa-solid fa-paperclip", text: "View NPCs", href: "generatehtml.json", params: { fullscreen: true, run: true } },
           { icon: "fa-solid fa-power-off", text: "Manual Text To Image", href: "run.json", params: { fullscreen: true, run: true } }, 
           { icon: "fa-brands fa-instalod", text: "update NPC Library", href: "updatenpclib.json", params: { fullscreen: true, run: true } },        
-          { icon: "fa-solid fa-feather", text: "Generate what's needed", href: "rungeneratewhatsneeded.json", params: { fullscreen: true, run: true } }        
+          { icon: "fa-solid fa-feather", text: "Generate what's needed", href: "rungeneratewhatsneeded.json", params: { fullscreen: true, run: true } },
+         { icon: "fa-solid fa-feather", text: "setup moondream", href: "installmb.js", params: { fullscreen: true, run: true } }  
+   
+      
         
         ]
 
