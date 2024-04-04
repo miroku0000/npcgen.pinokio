@@ -7,7 +7,7 @@ module.exports = async (kernel) => {
       params: {
         venv: "moonbeam/venv",
         message: [
-          "pip install -r requirements.txt"
+          "pip install -r moonbeam/requirements.txt"
         ],
       }
     }, {
@@ -15,7 +15,14 @@ module.exports = async (kernel) => {
       params: {
         venv: "venv"
       }
-    }, {
+    },{
+    "method": "shell.run",
+    "params": { 
+		"path": "app",
+      "message": "git clone https://github.com/miroku0000/npclibrary.git"}
+  },
+
+ {
       method: "notify",
       params: {
         html: "Click the 'start' tab to get started!"
